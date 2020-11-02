@@ -1,0 +1,104 @@
+// Inizio SASS
+// Inizio Importazioni
+@import "compass/typography/links/link-colors";
+
+// Dichiarazione Variabili
+// Colori
+
+// Fonts
+// Fonts - Dimensioni
+$font-size-desktop: 14px;
+$font-size-mobile: 12px;
+$font-size-rem: 62.5%;
+
+// Classi
+%centro {
+  text-align: center;
+}
+
+%cover,
+%sfondo {
+	background-attachment: scroll;
+	background-repeat: no-repeat;
+}
+
+%cover {
+  background-position: center;
+  background-size: cover;
+}
+
+%immagine {
+	height: auto;
+	width: 100%;
+}
+
+%maiuscolo {
+  text-transform: uppercase;
+}
+
+%sfondo {
+  background-position: 0 0;
+  background-size: 100%;
+}
+
+// Generale
+// Links
+a {
+  text-decoration: none !important;
+}
+
+// Outline
+a:focus,
+input:focus,
+.btn:focus {
+  outline: none !important;
+}
+
+// Layout
+.clear {
+	clear: both;
+}
+
+// Interazione
+// Visibilità
+.nascondi {
+	display: none !important;
+}
+
+// Container
+.no-padding {
+  padding: 0;
+}
+
+// Visibilità
+// Testo
+// HTML
+html {
+  font-size: $font-size-rem;
+
+  // Body
+  body {
+		font-size: $font-size-mobile;
+
+		@media (min-width: $screen-sm-min) {
+			font-size: $font-size-desktop;
+		}
+
+		// Container
+		.container {
+			height: auto;
+			margin: 0;
+			padding: 0;
+			width: 100%;
+
+			.row {
+				margin: 0;
+			}
+		}
+
+		h6 {
+			display: none;
+		}
+  }
+}
+// Fine SCSS

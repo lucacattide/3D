@@ -1,0 +1,26 @@
+{
+  "name": "3d",
+  "authors": [
+    "Luca Cattide - Front-End Web Developer <luca.cattide@greylab.it> (http://www.greylab.it)"
+  ],
+  "description": "© Greylab 2017. Tutti i Diritti riservati.",
+  "main": "bundle.js",
+  "keywords": [
+    "luca",
+    "cattide",
+    "greylab"
+  ],
+  "license": "Apache-2.0",
+  "homepage": "http://www.mainardiproduzioni.com",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.1"
+  }
+}

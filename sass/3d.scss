@@ -1,0 +1,25 @@
+// Inizio SCSS
+// Sketchfab
+.player {
+    
+    &::before {
+        content: '';
+        height: 100%;
+        min-height: 100%;
+        position: absolute;
+        visibility: hidden;        
+        width: 100%;
+        z-index: 1000;
+    }
+ 
+    &#{__lettore} {
+        height: 42em;
+
+        &#{--invisibile} {
+            height: 0;
+            visibility: hidden !important;	
+            width: 0;
+        }
+    }
+}
+// Fine SCSS
